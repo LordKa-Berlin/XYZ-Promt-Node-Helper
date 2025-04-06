@@ -66,6 +66,37 @@ If you want to start with a clean slate:
 - Only **active values** (not deactivated or marked for deletion) are included.
 - **Long-press** (hold for ~2 seconds) a value to copy that single part.
 
+## 🔧 Main Functionalities
+
+### 1. Label Button (Entry Name)
+
+- **Single Click**  
+  Copies the associated prompt to the clipboard. Only the *active* values (those not deactivated or marked for deletion) are included.
+
+- **Double Click**  
+  Toggles the deletion state for the entire entry:  
+  - First double-click: entry is marked for deletion (e.g. red background with white text).  
+  - Second double-click: entry is returned to normal active state.
+
+---
+
+### 2. Value Buttons (Prompt Elements)
+
+- **Single Click**  
+  Toggles the state of a single prompt element:  
+  - **Active (State 0)**: included in copied text.  
+  - **Deactivated (State 1)**: visually marked, excluded from copying.
+
+- **Double Click**  
+  Toggles deletion mark for a single element:  
+  - First double-click marks as deleted (e.g. red).  
+  - Second double-click restores to active.
+
+- **Long Press (≈2 seconds)**  
+  Copies the individual value directly to the clipboard regardless of its current state.
+
+---
+
 ### 🔃 Toggle Mode
 - Switch between:
   - **View Mode** (buttons & interactions),
