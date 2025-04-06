@@ -111,10 +111,20 @@ This keeps your storage clean without losing recent work history.
 ## 🖼️ Screenshots
 
 ### 🔎 Prompt Overview (View Mode)
-![Screenshot View Mode](screenshots/view_mode_placeholder.png)
+![Screenshot View Mode](screenshots/full-screen-view.png)
 
-### 🛠️ Edit Mode with CSV Import
-![Screenshot Edit Mode](screenshots/edit_mode_placeholder.png)
+### 🛠️ Editable List
+![Screenshot Edit Mode](screenshots/editable-list.png)
+
+### 🛠️ one click to toggle between all deactivated (will not be copied)and all activated, will be copied as well
+![Screenshot View Mode](screenshots/deactivate-activate.png)
+
+### 🛠️ click once, value is deactivated (not copied)
+hold for 2 seconds Only the value is copied to the clipboard
+![Screenshot Edit Mode](screenshots/deselect.png)
+
+### 🛠️ Double-click on value or line - marked for deletion
+![Screenshot Edit Mode](screenshots/delete.png)
 
 ---
 
