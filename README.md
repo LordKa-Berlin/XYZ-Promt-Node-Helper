@@ -3,21 +3,33 @@
 
 The **XYZ-Promt-Node-Helper** is a powerful prompt management tool for AI image generation workflows.  
 It helps you structure, edit, and export prompt components for use in tools like **Forge**, **AUTOMATIC1111**, or **ComfyUI**.
+Supports the creation and management of values for cyclical prompt replacement in tools such as the X/Y/Z Plot script or the PromptReplace Node.  
+Perfect for generating systematic image variations.
 
 ---
 
-## 📖 What does this tool do?
-
-This application is a GUI-based utility to:
+## 🧠 Features
 
 - Manage named collections of prompt values.
-- Split prompts into individually togglable buttons.
-- Copy full or partial prompts with a click.
-- Import prompt data from CSV.
-- Switch between view/edit modes.
-- Automatically back up your prompt list whenever changes are made.
+- Split prompts into individually toggleable buttons.
+- Copy full or partial prompts with a single click.
+- Import prompt data from CSV files.
+- Switch between display and edit modes.
+- Automatically save your prompt list whenever changes are made.
 
-It simplifies the creation of clean, reusable prompt templates and allows you to quickly copy specific prompt parts depending on your current use case.
+---
+
+## ♻️ Use for Cyclical Prompts and Replacement Systems
+
+This tool is ideal for preparing and managing value sets used in cyclical prompt workflows, such as:
+
+- 🎯 **Script: X/Y/Z Plot** in *Automatic1111*
+- 🧩 **PromptReplace Node** in *ComfyUI*
+- 📦 Batch or loop features in *InvokeAI*, *SD.Next*, *Forge*, etc.
+
+The generator systematically replaces specific words or placeholders in your prompt (e.g., `"tree"` → `"house"` → `"car"`) to automatically create multiple image variations.
+
+With this tool, you can precisely prepare prompt value sets and copy them into the GUI — structured, flexible, and reusable.
 
 ---
 
