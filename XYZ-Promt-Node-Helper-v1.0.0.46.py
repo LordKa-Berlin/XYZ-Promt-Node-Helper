@@ -1,5 +1,5 @@
 # Dateiname: XYZ-Promt-Node-Helper.py
-# Version: V1.0.0.45-Info2
+# Version: V1.0.0.46
 # Datum: 2025-04-06
 # Uhrzeit: 17:05
 # Dateispeichername: XYZ-Promt-Node-Helper.json
@@ -16,7 +16,7 @@ import time
 import csv
 import textwrap
 
-VERSION = "V1.0.0.45-Info2"
+VERSION = "V1.0.0.46"
 
 # Ermittele das Verzeichnis des Skripts und arbeite relativ dazu:
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -418,79 +418,69 @@ Version: v1.0.0.45
 
 WHAT DOES THIS PROGRAM DO?
 ---------------------------
-The XYZ-Promt-Node-Helper is a desktop tool that helps you manage, edit, and organize prompt entries – 
-especially useful for users of GUIs like Forge, AUTOMATIC1111, or ComfyUI. 
-It allows you to structure prompts clearly and export them in various formats.
+The XYZ-Promt-Node-Helper is a desktop tool to manage, edit, and organize prompt entries – especially 
+helpful for users of GUIs like Forge, AUTOMATIC1111, or ComfyUI. It allows you to structure prompts 
+clearly and export them in multiple formats.
 
 MAIN FEATURES & HOW TO USE
 ---------------------------
 
 ➕ Add Entry:
-- Enter a 'Label' (e.g., "Portrait_Prompts") and comma-separated prompt words.
+- Enter a 'Label' and a comma-separated list of prompt elements.
 - Click 'Add' to insert the entry.
-- Duplicate entries are automatically prevented.
+- Duplicate entries are automatically avoided.
 
 ✏️ Edit & Save:
-- Click 'Edit' to switch to edit mode.
-- Directly modify the label or prompt text.
-- Click 'Save' to apply changes – automatic backups are created.
+- Use 'Edit' mode to modify labels or prompt content.
+- Click 'Save' to apply changes.
+- Every save triggers an automatic backup.
 
 🗑️ Delete Entries:
 - In View Mode:
-  - Single-click a label: copies its prompt content to clipboard.
-  - Double-click a label: marks the whole entry for deletion.
-  - Double-click a value: marks just that prompt value for deletion.
+  - Single-click a label to copy its prompt.
+  - Double-click a label to mark the entire entry for deletion.
+  - Double-click a prompt value to mark only that part for deletion.
 - In Edit Mode:
-  - Check the checkbox to mark entries for deletion.
-- Click 'Delete' to confirm and remove marked items.
+  - Use checkboxes to select entries for deletion.
+- Confirm via 'Delete' button.
 
-🔄 Switch Modes:
-- Toggle between:
-  - 'View' mode: for interactive copy buttons.
-  - 'Edit' mode: for direct text editing.
+📁 BACKUP SYSTEM:
+- Every time you save or delete entries, a backup of the data is created automatically.
+- Backup files are saved in the folder:
+  ./backup-XYZ-Promt-Node-Helper/
+- Older backups (older than 30 days) are deleted automatically.
 
-📤 Output Mode Selection:
-- Choose between:
-  - 'Comma separated' → for Forge, AUTOMATIC1111, etc.
-  - 'Line by line' → for ComfyUI-style nodes.
-- Affects the format when copying prompt entries.
+🗃️ STORAGE FILE:
+- All prompt entries are stored in the file:
+  ./XYZ-Promt-Node-Helper.json
 
-🔍 Filter Function:
-- Enter one or more keywords (comma-separated) into the filter field.
-- Matches are highlighted in red.
-- Logical OR is used across multiple terms.
+📤 Output Format:
+- Choose between 'Comma separated' (Forge, A1111) or 'Line by line' (ComfyUI).
+- Affects copy behavior.
 
-📥 Import from CSV:
-- Click 'Import CSV' in the top-right area.
-- Format: Label, Prompt1, Prompt2, ...
-- Duplicate entries are skipped automatically.
-- Useful for importing bulk entries from spreadsheets.
+🔍 Filtering:
+- Enter keywords to highlight relevant entries.
+- Multiple terms = OR search logic.
 
-✅ Toggle All Values:
-- Use the 'Activate all / Deactivate all' button to switch all prompt values at once.
-- Affects what is included when copying.
+📥 CSV Import:
+- Import prompt lists from CSV: Label, Prompt1, Prompt2, ...
+- Duplicate entries are ignored.
 
-🕐 Long-Press Copy:
-- Hold a value button for ~2 seconds → it will be copied to clipboard.
-- Ideal for copying individual words or phrases.
+🕐 Long Press:
+- Hold a prompt button for ~2 seconds → copied to clipboard.
 
-💾 Automatic Backups:
-- Every save creates a backup file.
-- Older backups (30+ days) are automatically deleted.
-- Backup location: 'backup-XYZ-Promt-Node-Helper' (in the same folder as the script).
+✅ Toggle All:
+- Quickly activate/deactivate all prompt values.
 
 📌 Always on Top:
-- Keeps the app window in front of others.
-- Can be toggled in the top-right checkbox.
+- Keeps the window always in the foreground.
 
 ❓ Help Button:
-- The '?' button opens this help text in a scrollable info window.
-
-Tip: You can use this tool to prepare prompt templates and easily paste them into your favorite AI GUI.
-
+- Click '?' to display this help in a scrollable window.
 """
-
     )
+
+
     info_label = tk.Text(info_win, bg="#1F1F1F", fg="#FFA500", wrap="word", bd=0)
     info_label.insert("1.0", info_text)
     info_label.config(state="disabled")
