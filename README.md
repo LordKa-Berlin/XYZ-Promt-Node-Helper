@@ -169,13 +169,6 @@ hold for 2 seconds Only the value is copied to the clipboard
 ### 🛠️ Double-click on value or line - marked for deletion
 ![Screenshot Edit Mode](delete.png)
 
-## 🧪 Testbild
-
-Hier siehst du das eingebundene Testbild aus dem Ordner `assets`:
-
-![Testbild](assets/test.png)
-
-
 ---
 
 ## 📦 Requirements
