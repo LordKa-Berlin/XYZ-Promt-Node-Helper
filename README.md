@@ -1,4 +1,13 @@
 # XYZ-Promt-Node-Helper 🧠  
+
+## Update Info - Version 1.0.1.52
+
+**Release Date:** 2025-04-09  
+- **New Feature:** Added a scaling slider (0.5x to 2.0x, 200px length) for dynamic GUI resizing.  
+- **Improvement:** Implemented 200ms debouncing to prevent lag during slider adjustments.  
+- **Bug Fixes:** Resolved syntax errors and undefined variable issues for better stability.  
+- **Performance:** Enhanced GUI responsiveness and rendering efficiency.
+
 **Version: v1.0.0.46**
 
 The **XYZ-Promt-Node-Helper** is a powerful prompt management tool for AI image generation workflows.  
