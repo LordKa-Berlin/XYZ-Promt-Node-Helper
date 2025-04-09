@@ -1,6 +1,6 @@
 # XYZ-Promt-Node-Helper 🧠  
 
-## Update Info - Version 1.0.1.52
+## Update Info - Version 1.0.1.53
 
 **Release Date:** 2025-04-09  
 - **New Feature:** Added a scaling slider (0.5x to 2.0x, 200px length) for dynamic GUI resizing.  
